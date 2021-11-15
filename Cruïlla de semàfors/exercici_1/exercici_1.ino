@@ -40,7 +40,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
   
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
 
   
   digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
@@ -51,7 +51,7 @@ void loop()
   digitalWrite(led5, HIGH);     // definir el pin 10 com una sortida
 
   
-   delay(500);  // Els led's van a una velocitat de 500ms
+    delay(800);  // Els led's van a una velocitat de 800ms
   
    digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -69,7 +69,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, HIGH);     // definir el pin 10 com una sortida
 
-   delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
 
   digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -79,7 +79,7 @@ void loop()
   digitalWrite(led5, HIGH);     // definir el pin 10 com una sortida
 
   
-   delay(500);  // Els led's van a una velocitat de 500ms
+    delay(800);  // Els led's van a una velocitat de 800ms
   
    digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -89,7 +89,7 @@ void loop()
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
   
-    delay(500);  // Els led's van a una velocitat de 500ms
+     delay(800);  // Els led's van a una velocitat de 800ms
 
     
   digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
@@ -101,7 +101,7 @@ void loop()
 
 
 
-  delay(500);  // Els led's van a una velocitat de 500ms 
+   delay(800);  // Els led's van a una velocitat de 800ms
   
    digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -110,8 +110,7 @@ void loop()
   digitalWrite(led4, HIGH);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-
-    delay(500);  // Els led's van a una velocitat de 500ms
+ delay(800);  // Els led's van a una velocitat de 800ms
 
    digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -129,7 +128,7 @@ void loop()
   digitalWrite(led4, HIGH);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-    delay(800);  // Els led's van a una velocitat de 500ms
+    delay(800);  // Els led's van a una velocitat de 800ms
 
 
  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
@@ -139,7 +138,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
 
   digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -148,7 +147,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
 
   digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -157,7 +156,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
 
   digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -166,7 +165,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800mss
 
   digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -175,7 +174,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
 
   digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
   digitalWrite(led1, HIGH);     // definir el pin 6 com una sortida
@@ -184,7 +183,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
 
   digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
@@ -193,27 +192,7 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-  delay(500);  // Els led's van a una velocitat de 500ms
-
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, HIGH);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-  delay(500);  // Els led's van a una velocitat de 500ms
-
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
 
 
   digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
@@ -223,7 +202,26 @@ void loop()
   digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
   digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
 
-  delay(500);  // Els led's van a una velocitat de 500ms
+   delay(800);  // Els led's van a una velocitat de 800ms
+
+
+  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
+  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
+  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
+  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
+  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
+  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
+
+   delay(800);  // Els led's van a una velocitat de 800ms
+
+  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
+  digitalWrite(led1, HIGH);     // definir el pin 6 com una sortida
+  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
+  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
+  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
+  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
+
+   delay(800);  // Els led's van a una velocitat de 800ms
 
   digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
   digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
