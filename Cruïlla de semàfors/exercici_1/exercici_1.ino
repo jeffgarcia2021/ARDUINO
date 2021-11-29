@@ -1,237 +1,172 @@
 /**********************************************************************************
 **                                                                               **
-**                              Array de 8 LEDs                                  **
+**                             NOM AMB DISPLAY                                   **
+**                             JEFF GARCIA                                       **
 **                                                                               **
-**                              Jeff Garcia                                      **
 **********************************************************************************/
 
 //********** Includes *************************************************************
 
 //********** Variables ************************************************************
-const byte led0 = 7;          // donar nom al pin 5 de l’Arduino
-const byte led1 = 8;          // donar nom al pin 6 de l’Arduino
-const byte led2 = 9;          // donar nom al pin 7 de l’Arduino
-const byte led3 = 10;          // donar nom al pin 8 de l’Arduino
-const byte led4 = 11;          // donar nom al pin 9 de l’Arduino
-const byte led5 = 12;         // donar nom al pin 10 de l’Arduino
-
-               // definir variable de temps en ms   
+const byte segA = 5;          // donar nom al pin 5 de l’Arduino
+const byte segB = 6;          
+const byte segC = 7;          
+const byte segD = 8;          
+const byte segE = 9;          
+const byte segF = 10;         
+const byte segG = 11; 
+const byte segdot = 12; 
+long int t = 700;
+long int a = 750;  // temps nomes per al punt del display.
 
 //********** Setup ****************************************************************
 void setup()
 {
-  pinMode(led0, OUTPUT);     // definir el pin 5 com una sortida
-  pinMode(led1, OUTPUT);     // definir el pin 6 com una sortida
-  pinMode(led2, OUTPUT);     // definir el pin 7 com una sortida
-  pinMode(led3, OUTPUT);     // definir el pin 8 com una sortida
-  pinMode(led4, OUTPUT);     // definir el pin 9 com una sortida
-  pinMode(led5, OUTPUT);     // definir el pin 10 com una sortida
- 
+  pinMode(segA, OUTPUT);     // definir el pin 5 com una sortida
+  pinMode(segB, OUTPUT);     // definir el pin 6 com una sortida
+  pinMode(segC, OUTPUT);     // definir el pin 7 com una sortida
+  pinMode(segD, OUTPUT);     // definir el pin 8 com una sortida
+  pinMode(segE, OUTPUT);     // definir el pin 9 com una sortida
+  pinMode(segF, OUTPUT);     // definir el pin 10 com una sortida
+  pinMode(segG, OUTPUT);     // definir el pin 11 com una sortida
 }
 
 //********** Loop *****************************************************************
 void loop()
 {
+      //ESTE ES PARA HACER EL 0
+  
+  digitalWrite(segA, LOW);     // MEDIO CENTRO
+  digitalWrite(segB, HIGH);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, HIGH);    // MEDIO ARRIBA
+  digitalWrite(segD, HIGH);    // ARRIBA DERECHA
+  digitalWrite(segE, HIGH);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);    // ABAJO DERECHA
+  digitalWrite(segG, HIGH);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
 
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
+//ESTE ES PARA HACER EL 1
   
-   delay(800);  // Els led's van a una velocitat de 800ms
-
+  digitalWrite(segA, LOW);    // MEDIO CENTRO
+  digitalWrite(segB, LOW);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, LOW);    // MEDIO ARRIBA
+  digitalWrite(segD, HIGH);   // ARRIBA DERECHA
+  digitalWrite(segE, LOW);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);   // ABAJO DERECHA
+  digitalWrite(segG, LOW);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
   
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, HIGH);     // definir el pin 10 com una sortida
-
-  
-   delay(800);  // Els led's van a una velocitat de 800ms
-  
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, HIGH);     // definir el pin 10 com una sortida
-  
-   delay(500);  // Els led's van a una velocitat de 500ms
-  
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, HIGH);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, HIGH);     // definir el pin 10 com una sortida
-
-  
-   delay(800);  // Els led's van a una velocitat de 800ms
-  
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, HIGH);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-  
-   delay(800);  // Els led's van a una velocitat de 800ms
-
+  delay(t);                  // es queden leds tms encesos
     
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-
-
-   delay(800);  // Els led's van a una velocitat de 800ms
+    //ESTE ES PARA HACER EL 2
   
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, HIGH);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
+  digitalWrite(segA, HIGH);    // MEDIO CENTRO
+  digitalWrite(segB, LOW);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, HIGH);    // MEDIO ARRIBA
+  digitalWrite(segD, HIGH);   // ARRIBA DERECHA
+  digitalWrite(segE, HIGH);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, LOW);   // ABAJO DERECHA
+  digitalWrite(segG, HIGH);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
 
-   delay(800);  // Els led's van a una velocitat de 800ms
+    //ESTE ES PARA HACER EL 3
+  
+  digitalWrite(segA, HIGH);    // MEDIO CENTRO
+  digitalWrite(segB, LOW);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, HIGH);    // MEDIO ARRIBA
+  digitalWrite(segD, HIGH);   // ARRIBA DERECHA
+  digitalWrite(segE, LOW);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);   // ABAJO DERECHA
+  digitalWrite(segG, HIGH);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
+  
+    //ESTE ES PARA HACER EL 4
+  
+  digitalWrite(segA, HIGH);    // MEDIO CENTRO
+  digitalWrite(segB, HIGH);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, LOW);    // MEDIO ARRIBA
+  digitalWrite(segD, HIGH);   // ARRIBA DERECHA
+  digitalWrite(segE, LOW);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);   // ABAJO DERECHA
+  digitalWrite(segG, LOW);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
 
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
+    //ESTE ES PARA HACER EL 5
+  
+  digitalWrite(segA, HIGH);    // MEDIO CENTRO
+  digitalWrite(segB, HIGH);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, HIGH);    // MEDIO ARRIBA
+  digitalWrite(segD, LOW);   // ARRIBA DERECHA
+  digitalWrite(segE, LOW);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);   // ABAJO DERECHA
+  digitalWrite(segG, HIGH);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
 
-   delay(500);  // Els led's van a una velocitat de 500ms
+  
+    //ESTE ES PARA HACER EL 6
+  
+  digitalWrite(segA, HIGH);    // MEDIO CENTRO
+  digitalWrite(segB, HIGH);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, LOW);    // MEDIO ARRIBA
+  digitalWrite(segD, LOW);   // ARRIBA DERECHA
+  digitalWrite(segE, HIGH);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);   // ABAJO DERECHA
+  digitalWrite(segG, HIGH);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
 
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, LOW);     // definir el pin 8 com una sortida
-  digitalWrite(led4, HIGH);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
+      //ESTE ES PARA HACER EL 7
+  
+  digitalWrite(segA, LOW);    // MEDIO CENTRO
+  digitalWrite(segB, LOW);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, HIGH);    // MEDIO ARRIBA
+  digitalWrite(segD, HIGH);   // ARRIBA DERECHA
+  digitalWrite(segE, LOW);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);   // ABAJO DERECHA
+  digitalWrite(segG, LOW);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
+  
+      //ESTE ES PARA HACER EL 8
+  
+  digitalWrite(segA, HIGH);    // MEDIO CENTRO
+  digitalWrite(segB, HIGH);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, HIGH);    // MEDIO ARRIBA
+  digitalWrite(segD, HIGH);   // ARRIBA DERECHA
+  digitalWrite(segE, HIGH);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);   // ABAJO DERECHA
+  digitalWrite(segG, HIGH);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
 
-   delay(800);  // Els led's van a una velocitat de 800ms
+     //ESTE ES PARA HACER EL 9
+  
+  digitalWrite(segA, HIGH);    // MEDIO CENTRO
+  digitalWrite(segB, HIGH);    // ARRIBA IZQUIERDA
+  digitalWrite(segC, HIGH);    // MEDIO ARRIBA
+  digitalWrite(segD, HIGH);   // ARRIBA DERECHA
+  digitalWrite(segE, LOW);    //  ABAJO IZQUIERDA
+  digitalWrite(segF, HIGH);   // ABAJO DERECHA
+  digitalWrite(segG, LOW);    // MEDIO ABAJO
+    digitalWrite(segdot, HIGH);    // PUNTO
+  
+  delay(t);                  // es queden leds tms encesos
 
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, HIGH);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, HIGH);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, HIGH);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800mss
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, HIGH);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, HIGH);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, HIGH);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-  digitalWrite(led0, LOW);     // definir el pin 5 com una sortida
-  digitalWrite(led1, HIGH);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 800ms
-
-  digitalWrite(led0, HIGH);     // definir el pin 5 com una sortida
-  digitalWrite(led1, LOW);     // definir el pin 6 com una sortida
-  digitalWrite(led2, LOW);     // definir el pin 7 com una sortida
-  digitalWrite(led3, HIGH);     // definir el pin 8 com una sortida
-  digitalWrite(led4, LOW);     // definir el pin 9 com una sortida
-  digitalWrite(led5, LOW);     // definir el pin 10 com una sortida
-
-   delay(800);  // Els led's van a una velocitat de 500ms
 
 
 }
-
+  
 //********** Funcions *************************************************************
